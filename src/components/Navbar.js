@@ -15,10 +15,10 @@ function getItem(label, key, icon, children, type) {
   }
   
   const nav_items = [
-    getItem('Portfolio', '1', <CodeOutlined />),
-    getItem('About Me', '2', <UserOutlined />),
-    getItem('Contact Me', '3', <MailOutlined />),
-    getItem('', '4', <Button type="link" icon = {<LinkedinFilled style={{color: '#0077b5' }} />}>LinkedIn</Button>)
+    getItem('', '1', <Button type="link" href = "/" icon = {<CodeOutlined/>}>Portfolio</Button>),
+    getItem('', '2', <Button type="link" href = "/about" icon = {<UserOutlined />}>About Me</Button>),
+    getItem('', '3', <Button type="link" href = "/contact" icon = {<MailOutlined />}>Contact Me</Button>),
+    getItem('', '4', <Button type="link" href = "https://www.linkedin.com/in/matteo-ramazzini-276470229/" icon = {<LinkedinFilled style={{color: '#0077b5' }} />}>LinkedIn</Button>)
     ];
 
 
@@ -28,7 +28,7 @@ function getItem(label, key, icon, children, type) {
 <Header className="header">
                 <div className="logo" />
                 
-                <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']} items={nav_items } />
+                <Menu theme="dark" mode="horizontal"  items={nav_items } />
                 
             </Header>
     );
