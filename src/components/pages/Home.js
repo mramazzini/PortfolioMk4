@@ -42,7 +42,7 @@ function Home() {
               minHeight: 280,
             }}
           >
-            Content
+            Select a tab to the left to view my work!
           </Content>
           
         </Layout>
