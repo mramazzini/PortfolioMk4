@@ -1,53 +1,18 @@
 import React from 'react';
-import Side_menu from '../Side_menu';
-import Navbar from '../Navbar';
-import Bottom from '../Bottom';
-import { Carousel } from 'antd';
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
-import {LinkedinFilled} from '@ant-design/icons';
-import { MenuProps } from 'antd';
-const { Header, Content, Footer, Sider } = Layout;
 
-
-
-
-
-
+import Bubbles from '../Bubbles';
+import Intro from '../Intro';
 
 function Home() {
-    const {
-        token: {colorBgContainer},
-            } = theme.useToken();
+ 
     return (
-        
-        <Layout>
-            
-            <Navbar/>
-            
-            <Content style={{ padding: '0 50px', }}>
-                
-            </Content>
-            
-            <Layout
-          style={{
-            padding: '24px 0',
-            background: colorBgContainer,
-          }}
-          
-        >
-        <Side_menu/>
-        <Content
-            style={{
-              padding: '0 24px',
-              minHeight: 280,
-            }}
-          >
-            Select a tab to the left to view my work!
-          </Content>
-          
-        </Layout>
-        <Bottom/>
-        </Layout>
+      <div className='main-background'>
+      <body>
+        <Bubbles/>
+        <Intro/>
+      </body>
+       <main className='secondary-background'></main>
+       </div>
     );
 }
 
