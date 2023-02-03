@@ -2,7 +2,7 @@ import React from 'react';
 
 import Bubbles from '../Bubbles';
 import Intro from '../Intro';
-
+import AboutMe from '../AboutMe';
 function Home() {
  
     return (
@@ -10,6 +10,8 @@ function Home() {
       <body>
         <Bubbles/>
         <Intro/>
+        <AboutMe/>
+        
       </body>
        <main className='secondary-background'></main>
        </div>
