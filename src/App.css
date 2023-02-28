@@ -6,17 +6,25 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  top:300%;
+  top:230vh;
   position:absolute;
   z-index: 3;
   opacity: 0;
+  overflow: hidden;
 }
 
 .project-title{
-  font: ;
+  font-size: 5rem;
+  position: absolute;
+  color: #1ecbe1;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  z-index: 5;
+  bottom: 100vh;
 }
 
 .card {
+  
   opacity: 0;
   width: 20vw;
   height: 20vh;
@@ -183,6 +191,15 @@ background-size: cover;
   position: relative;
   z-index: 3;
   
+}
+.projects-divider{
+  margin-bottom: 0.5rem;
+  width:50vw;
+  height:2px;
+  bottom:95vh;
+  background-color:#024744;
+  position: absolute;
+  z-index: 3;
 }
 .box {
   height: 80vh;
@@ -361,3 +378,22 @@ div .dot {
   }
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #024744;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1ecbe1;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #006ab6;
+}

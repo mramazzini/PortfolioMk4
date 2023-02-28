@@ -43,7 +43,8 @@ const Projects = () => {
 
   return (
     <div className={`card-container ${inViewport ? 'in-viewport' : ''}`}>
-      
+      <div className = "project-title">Some things I have done</div>
+      <div className='projects-divider'></div>
        <div
           key={cards[0].id}
           className={`card ${cards[0].show ? 'show' : 'hide'} `}
@@ -60,7 +61,7 @@ const Projects = () => {
         >
 
         </div>
-        
+
         <div
           key={cards[3].id}
           className={`card ${cards[3].show ? 'show' : 'hide'} `}
