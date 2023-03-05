@@ -30,7 +30,7 @@ const SideNav1 = () => {
           icon.id === i ? { ...icon, show: true } : icon
         );
       });
-    }, 200);
+    }, 100);
     return () => clearInterval(intervalId);
         }
       });

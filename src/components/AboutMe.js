@@ -23,8 +23,10 @@ function AboutMe() {
   }, []);
 
   return (
-    <div ref={aboutRef} className={`box ${inViewport ? "in-viewport" : ""}`}>
-      <div className='portrait' id = 'About'></div>
+    <div ref={aboutRef}  id = "About" className={`box ${inViewport ? "in-viewport" : ""}`}>
+      
+      
+      <div className='portrait' ></div>
       <div className='portrait-color-cover'></div>
       <div className = 'portrait-back'></div>
       <div className='About-content'>
