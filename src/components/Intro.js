@@ -10,7 +10,7 @@ function Intro() {
   };
 
   return (
-    <div>
+    <div className ='intro'>
       <p className='intro-text'>I am a Web Developer. Delve into the <p className='madness'>Depths</p> of my mind.</p>
       <Link onClick={handleClick} to="#About" className='bobbing-arrow'><DownOutlined style = {{fontSize:'300%'}}/></Link>
     </div>

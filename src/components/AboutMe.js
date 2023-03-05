@@ -38,7 +38,7 @@ function AboutMe() {
           <br /><br />
           Fast forward to today - I still am making those silly games, alongside my pursual of my Computer Science degree.
           <br /><br />
-          I am dedicated to providing the best user experience in whatever project I <p className = 'pun'>dive</p> into.
+          I am dedicated to providing the best user experience in whatever project I <p className = 'pun'>dive</p> into. 
         </section>
       </div>
     </div>
