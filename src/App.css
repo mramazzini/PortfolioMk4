@@ -35,11 +35,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  top:230vh;
-  position:absolute;
-  z-index: 3;
-  opacity: 0;
-  overflow: hidden;
+  
 }
 
 .project-title{
@@ -49,7 +45,7 @@
   font-family: 'Courier New', Courier, monospace;
   font-weight: bolder;
   z-index: 5;
-  bottom: 100vh;
+  
 }
 
 .card {
@@ -57,7 +53,7 @@
   opacity: 0;
   width: 20vw;
   height: 20vh;
-  margin:10vh;
+  
   background-color: lightgray;
   border-radius: 10px;
   text-align: center;
@@ -74,7 +70,13 @@
   opacity: 1;
   
 }
-
+.projects{
+  top:230vh;
+  position:absolute;
+  z-index: 3;
+  left:20%;
+  overflow: hidden;
+}
 .show {
   opacity: 1;
 }
@@ -315,9 +317,10 @@ background-size: cover;
 .intro{
   position: absolute;
   top:50vh;
-  left:50vw;
+  left:50%;
   align-items: center;
   display: flex;
+  justify-content: center;
 }
 .bubble-wrapper div {
   height: 60px;
