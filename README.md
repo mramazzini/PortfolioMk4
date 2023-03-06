@@ -25,11 +25,12 @@ This site was built using the following technologies:
 
 The following are the key features of my portfolio site:
 
-- Responsive design that adapts to different screen sizes
+- Responsive design that adapts to different screen sizes (WIP)
 - Navigation bar that allows easy access to different sections of the site
+- Navigation bar that links the user to various methods of contacting me.
 - Section showcasing my skills and areas of expertise
 - Section showcasing my work, with links to live sites and/or GitHub repositories
-- Contact form that allows visitors to get in touch with me
+
 
 ## Installation
 
