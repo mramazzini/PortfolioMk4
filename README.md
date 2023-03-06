@@ -1,6 +1,6 @@
-# Portfolio Site (WIP)
+# Portfolio Mk 4(WIP)
 
-This is my portfolio site, showcasing my work in web development. 
+This is the 4th iteration of my portfolio site, showcasing my work in web development. 
 
 ## Table of Contents
 
