@@ -30,7 +30,7 @@ function AboutMe() {
       <div className='portrait-color-cover'></div>
       <div className = 'portrait-back'></div>
       <div className='About-content'>
-        <header className={'section-head-mini'}>Hello my name is</header>
+        <header className={'section-head-mini'}>My name is</header>
         <header className={'section-head'}>
           Matteo Ramazzini
         </header>
