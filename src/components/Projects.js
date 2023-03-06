@@ -43,14 +43,16 @@ const Projects = () => {
 
   return (
     <div className = 'projects'>
-      <div className = "project-title">Some things I have done</div>
-      <div className='projects-divider'></div>
+      
+      
     <div className={`card-container ${inViewport ? 'in-viewport' : ''}`}>
       
        <div
           key={cards[0].id}
           className={`card ${cards[0].show ? 'show' : 'hide'} `}
-        ></div>
+        >
+          
+        </div>
 
         <div
           key={cards[1].id}

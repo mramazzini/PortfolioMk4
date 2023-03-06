@@ -51,7 +51,7 @@ const SideNav1 = () => {
     <div className = {`side-nav ${inViewport ? 'in-viewport' : ''}`}>
         <div className = {`phone-number ${showPhone ? 'show' : 'hide'}`}>Call Me! +1(281)-620-2896</div>
         
-        <Link key={icons[0].id} className = {`side-nav-icon   ${icons[0].show ? 'show' : 'hide'} phone`} to="#About" onClick ={handlePhoneClick}><PhoneOutlined/></Link>
+        <Link key={icons[0].id} className = {`side-nav-icon   ${icons[0].show ? 'show' : 'hide'} phone`} to="#" onClick ={handlePhoneClick}><PhoneOutlined/></Link>
         <div  key={icons[1].id}className = {`side-nav-divider ${icons[1].show ? 'show' : 'hide'}`}></div>
         <Link key={icons[2].id} className = {`side-nav-icon   ${icons[2].show ? 'show' : 'hide'}`} to="#" onClick={(e) => {
                 window.location.href = "mailto:mramazzini123@gmail.com";

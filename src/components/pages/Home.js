@@ -1,11 +1,13 @@
 import React, {useEffect} from 'react';
+import ReactLoading from 'react-loading';
 import AboutParticles from '../AboutParticles';
 import Bubbles from '../Bubbles';
 import Intro from '../Intro';
 import AboutMe from '../AboutMe';
-
+import Navbar from '../NavBar';
 import Projects from '../Projects';
 import SideNav1 from '../SideNav1';
+
 function Home() {
 
   useEffect(() => {
@@ -15,8 +17,13 @@ function Home() {
   }, []);
     return (
       <div className='main-background'>
+        <div className = 'loading-screen'>
+        <ReactLoading className = 'loading' type={'cubes'} height={'15%'} width={'10%'} />
+        </div>
       <body>
-      <SideNav1/>
+      <div className = 'page-divider' id = 'divider0'></div>
+        <Navbar/>
+        <SideNav1/>
         <Bubbles/>
         <Intro/>
         <AboutMe />

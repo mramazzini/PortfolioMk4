@@ -27,10 +27,11 @@ function Intro() {
     window.scrollTo({top:rect.top+scrollTop, behavior:'smooth'});
   }
 
+   
   return (
     <div  className={`intro ${inViewport ? "show" : "hide"}`} id = 'anchor' > 
-      <p className='intro-text'>I am a Web Developer. Delve into the <p className='madness'>Depths</p> of my mind.</p>
-      <div onClick = {scrollToAbout} className='bobbing-arrow'><DownOutlined style = {{fontSize:'300%'}}/></div>
+      <p className='intro-text'><p className='madness'>Hi!</p> I am a web developer. </p>
+      <div onClick = {scrollToAbout} className='clickable bobbing-arrow'><DownOutlined style = {{fontSize:'300%'}}/></div>
     </div>
   );
 }

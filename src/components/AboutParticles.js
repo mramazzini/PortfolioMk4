@@ -30,7 +30,7 @@ const AboutParticles = () => {
                     "color": {
                       "value": "#fff"
                     },
-                    "opacity": 1
+                    "opacity": 0.5
                   },
                   "enable": false
                 },
@@ -86,7 +86,7 @@ const AboutParticles = () => {
                       "distance": 400,
                       "duration": 2,
                       "mix": false,
-                      "opacity": 0.8,
+                      "opacity": 0.4,
                       "size": 40,
                       "divs": {
                         "distance": 200,
