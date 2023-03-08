@@ -25,10 +25,11 @@ function AboutMe() {
   return (
     <div ref={aboutRef}  id = "About" className={`box ${inViewport ? "in-viewport" : ""}`}>
       
-      
-      <div className='portrait' ></div>
+      <div className = 'portrait-holder'>
+        <div className='portrait' ></div>
       <div className='portrait-color-cover'></div>
-      <div className = 'portrait-back'></div>
+      <div className = 'portrait-back'></div></div>
+      
       <div className='About-content'>
         <header className={'section-head-mini'}>My name is</header>
         <header className={'section-head'}>

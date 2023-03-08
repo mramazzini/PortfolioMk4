@@ -2,7 +2,7 @@ import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
-const AboutParticles = () => {
+const ProjectsParticles = () => {
     const particlesInit = useCallback(async engine => {
         console.log(engine);
         // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
@@ -16,21 +16,22 @@ const AboutParticles = () => {
     }, []);
 
     return (
-        <Particles
+        <div>
+            <Particles
             className="particles"
-            id="tsparticles1"
+            id="tsparticles2"
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
                 "autoPlay": true,
-               
+                
                 "backgroundMask": {
                   "composite": "destination-out",
                   "cover": {
                     "color": {
                       "value": "#fff"
                     },
-                    "opacity": 0.5
+                    "opacity": 1
                   },
                   "enable": false
                 },
@@ -51,16 +52,16 @@ const AboutParticles = () => {
                       "mode": "push"
                     },
                     "onDiv": {
-                      "selectors": [],
+                      "selectors": "#repulse-div",
                       "enable": false,
-                      "mode": [],
+                      "mode": "repulse",
                       "type": "circle"
                     },
                     "onHover": {
                       "enable": true,
-                      "mode": "grab",
+                      "mode": "bubble",
                       "parallax": {
-                        "enable": true,
+                        "enable": false,
                         "force": 60,
                         "smooth": 10
                       }
@@ -86,7 +87,7 @@ const AboutParticles = () => {
                       "distance": 400,
                       "duration": 2,
                       "mix": false,
-                      "opacity": 0.4,
+                      "opacity": 0.8,
                       "size": 40,
                       "divs": {
                         "distance": 200,
@@ -312,7 +313,7 @@ const AboutParticles = () => {
                       "height": 1080
                     },
                     "limit": 0,
-                    "value": 100
+                    "value": 80
                   },
                   "opacity": {
                     "random": {
@@ -321,17 +322,17 @@ const AboutParticles = () => {
                     },
                     "value": {
                       "min": 0.1,
-                      "max": 0.5
+                      "max": 1
                     },
                     "animation": {
                       "count": 0,
                       "enable": true,
-                      "speed": 3,
+                      "speed": 1,
                       "decay": 0,
                       "sync": false,
                       "destroy": "none",
                       "startValue": "random",
-                      "minimumValue": 0.1
+                      "minimumValue": 0.2
                     }
                   },
                   "reduceDuplicates": false,
@@ -347,22 +348,126 @@ const AboutParticles = () => {
                     }
                   },
                   "shape": {
-                    "options": {},
-                    "type": "circle"
+                    "options": {
+                      "character": {
+                        "fill": false,
+                        "font": "Verdana",
+                        "style": "",
+                        "value": "*",
+                        "weight": "400"
+                      },
+                      "char": {
+                        "fill": false,
+                        "font": "Verdana",
+                        "style": "",
+                        "value": "*",
+                        "weight": "400"
+                      },
+                      "polygon": {
+                        "sides": 5
+                      },
+                      "star": {
+                        "sides": 5
+                      },
+                      "image": [
+                        
+                        {
+                          "src": "https://img.icons8.com/plasticine/100/null/react.png",
+                          "width": 32,
+                          "height": 32
+                        },
+                        {
+                            "src": "https://img.icons8.com/color/48/null/javascript--v1.png",
+                            "width": 32,
+                            "height": 32
+                          },
+                          {
+                            "src": "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/null/external-html-web-development-flaticons-lineal-color-flat-icons-2.png",
+                            "width": 32,
+                            "height": 32
+                          },
+                          {
+                            "src": "https://img.icons8.com/color/48/null/css3.png",
+                            "width": 32,
+                            "height": 32
+                          },
+                          {
+                            "src": "https://img.icons8.com/color/48/null/java-coffee-cup-logo--v1.png",
+                            "width": 32,
+                            "height": 32
+                          },
+                          {
+                            "src": "https://img.icons8.com/color/48/null/python--v1.png",
+                            "width": 32,
+                            "height": 32
+                          },
+                          {
+                            "src": "https://img.icons8.com/external-soft-fill-juicy-fish/60/null/external-sql-coding-and-development-soft-fill-soft-fill-juicy-fish.png",
+                            "width": 32,
+                            "height": 32
+                          },
+                          {
+                            "src": "https://img.icons8.com/color/48/null/mongodb.png",
+                            "width": 32,
+                            "height": 32
+                          },
+
+                      ],
+                      "images": [
+                        {
+                          "src": 'https://img.icons8.com/plasticine/100/null/react.png',
+                          "width": 32,
+                          "height": 32
+                        },
+                        {
+                            "src": "https://img.icons8.com/color/48/null/javascript--v1.png",
+                            "width": 32,
+                            "height": 32
+                          },
+                          {
+                            "src": "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/null/external-html-web-development-flaticons-lineal-color-flat-icons-2.png",
+                            "width": 32,
+                            "height": 32
+                          },
+                          {
+                            "src": "https://img.icons8.com/color/48/null/css3.png",
+                            "width": 32,
+                            "height": 32
+                          },
+                          {
+                            "src": "https://img.icons8.com/color/48/null/java-coffee-cup-logo--v1.png",
+                            "width": 32,
+                            "height": 32
+                          },
+                          {
+                            "src": "https://img.icons8.com/color/48/null/python--v1.png",
+                            "width": 32,
+                            "height": 32
+                          },
+                          {
+                            "src": "https://img.icons8.com/external-soft-fill-juicy-fish/60/null/external-sql-coding-and-development-soft-fill-soft-fill-juicy-fish.png",
+                            "width": 32,
+                            "height": 32
+                          },
+                          {
+                            "src": "https://img.icons8.com/color/48/null/mongodb.png",
+                            "width": 32,
+                            "height": 32
+                          },
+                      ]
+                    },
+                    "type": "image"
                   },
                   "size": {
                     "random": {
-                      "enable": true,
+                      "enable": false,
                       "minimumValue": 1
                     },
-                    "value": {
-                      "min": 0.1,
-                      "max": 10
-                    },
+                    "value": 16,
                     "animation": {
                       "count": 0,
-                      "enable": true,
-                      "speed": 20,
+                      "enable": false,
+                      "speed": 40,
                       "decay": 0,
                       "sync": false,
                       "destroy": "none",
@@ -371,7 +476,36 @@ const AboutParticles = () => {
                     }
                   },
                   "stroke": {
-                    "width": 0
+                    "width": 0,
+                    "color": {
+                      "value": "#000000",
+                      "animation": {
+                        "h": {
+                          "count": 0,
+                          "enable": false,
+                          "offset": 0,
+                          "speed": 1,
+                          "decay": 0,
+                          "sync": true
+                        },
+                        "s": {
+                          "count": 0,
+                          "enable": false,
+                          "offset": 0,
+                          "speed": 1,
+                          "decay": 0,
+                          "sync": true
+                        },
+                        "l": {
+                          "count": 0,
+                          "enable": false,
+                          "offset": 0,
+                          "speed": 1,
+                          "decay": 0,
+                          "sync": true
+                        }
+                      }
+                    }
                   },
                   "zIndex": {
                     "random": {
@@ -404,17 +538,17 @@ const AboutParticles = () => {
                   },
                   "rotate": {
                     "random": {
-                      "enable": false,
+                      "enable": true,
                       "minimumValue": 0
                     },
                     "value": 0,
                     "animation": {
-                      "enable": false,
-                      "speed": 0,
+                      "enable": true,
+                      "speed": 5,
                       "decay": 0,
                       "sync": false
                     },
-                    "direction": "clockwise",
+                    "direction": "random",
                     "path": false
                   },
                   "destroy": {
@@ -513,11 +647,11 @@ const AboutParticles = () => {
                   "links": {
                     "blink": false,
                     "color": {
-                      "value": "#024744"
+                      "value": "#000"
                     },
                     "consent": false,
                     "distance": 150,
-                    "enable": true,
+                    "enable": false,
                     "frequency": 1,
                     "opacity": 0.4,
                     "shadow": {
@@ -554,9 +688,10 @@ const AboutParticles = () => {
                 "style": {},
                 "themes": [],
                 "zLayers": 100
-              }}
-        />
-    );
-};
-
-export default AboutParticles;
+              }
+                
+            }></Particles>
+        </div>
+    )
+}
+export default ProjectsParticles;

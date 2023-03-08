@@ -7,6 +7,7 @@ import AboutMe from '../AboutMe';
 import Navbar from '../NavBar';
 import Projects from '../Projects';
 import SideNav1 from '../SideNav1';
+import ProjectsParticles from '../ProjectsParticles';
 
 function Home() {
 
@@ -22,6 +23,7 @@ function Home() {
         </div>
       <body>
       <div className = 'page-divider' id = 'divider0'></div>
+      <ProjectsParticles/>
         <Navbar/>
         <SideNav1/>
         <Bubbles/>
@@ -33,6 +35,7 @@ function Home() {
           <div className = 'page-divider' id = 'divider2'></div>
           </div>
         <Projects/>
+        <div className = 'page-divider' id = 'divider3'></div>
       </body>
        <main className='secondary-background'></main>
        </div>

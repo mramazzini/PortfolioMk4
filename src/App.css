@@ -84,7 +84,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
+  width:100%;
+  height:100%;
+  align-content: center;
 }
 
 .project-title{
@@ -102,8 +104,8 @@
   justify-content: center;
   align-items: center;
   opacity: 0;
-  width: 20vw;
-  height: 60vh;
+  width: 20%;
+  height: 60%;
   margin:20px;
   background-color: #031923;
   border-radius: 8px;
@@ -151,12 +153,16 @@
   }
 }
 .projects{
-  top:220vh;
+  top:200vh;
   position:absolute;
   z-index: 3;
-  width:100%;
- 
+  height: 100%;
   overflow: hidden;
+  width:100%;
+ display:flex;
+ align-items: center;
+  overflow: hidden;
+  justify-content: space-around;
 }
 .show {
   opacity: 1;
@@ -172,19 +178,22 @@
   position: absolute;
 }
 
-
+.portrait-holder{
+  display: grid;
+  width:20vw;
+  height: 20vw;
+}
 
 .portrait{
   background: url(assets/portrait.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   
-  position:absolute;
-  
-  
-  float:left;
-  width:20vw;
-  height:20vw;
+  position: relative;
+  grid-row: 1;
+  grid-column: 1;
+  width:100%;
+  height:100%;
   z-index: 3;
   border-radius:1rem;
 }
@@ -195,22 +204,25 @@
 .portrait-color-cover{
   background-color: #1ecbe1;
   opacity:20%;
-  position:absolute;
+  position: relative;
+  grid-row: 1;
+  grid-column: 1;
   border-radius:1rem;
+ 
   
-  float:left;
-  width:20vw;
-  height:20vw;
+  width:100%;
+  height:100%;
   z-index: 3;
 }
 
 .portrait-back{
-  position:absolute;
-  top:1vh;
-  left:1vw;
-  float:left;
-  width:20vw;
-  height:20vw;
+  top: 10px;
+  left: 10px;
+  position: relative;
+  grid-row: 1;
+  grid-column: 1;
+  width:100%;
+  height:100%;
   z-index: 3;
   border-width: 2px;
   z-index: 2;
@@ -230,16 +242,29 @@
 }
 .about-main{
   line-height: 150%;
-
-  font-size: 2rem;
+  
+  font-size: 1.2vw;
   color: #fff;
   
 }
+#About{
+  display:flex;
+  justify-content:space-evenly;
+}
 .About-content{
+
   height: 50vh;
   width: 50vw;
   float:right;
+  overflow:hidden;
+  padding:10px;
   
+  border-style: solid;
+  background: linear-gradient(#020D11, #01090C);
+  border-color: #024744; 
+  z-index:2;
+  display:flex;
+  flex-direction: column;
 }
 .divider{
   margin-bottom: 0.5rem;
@@ -261,16 +286,16 @@
   
 }
 .box {
-  height: 80vh;
-  width: 80vw;
+  height: 100%;
+  width: 100%;
   
-  top:130%;
+  top:100%;
   position: absolute;
   opacity: 0;
-  right:10%;
-  
-  transition: all 1s ease-in-out;
+  align-items: center;
+  transition: opacity 1s ease-in-out;
   z-index: 2;
+  
 }
 .box.in-viewport {
   opacity: 1;
@@ -295,6 +320,9 @@
 #divider2{
   top:200vh;
 }
+#divider3{
+  top:300vh;
+}
 .about-particles-holder{
   display:flex;
   
@@ -307,6 +335,11 @@
   z-index: 1;
   
 }
+
+#tsparticles2{
+  top:200%;
+}
+
 .bobbing-arrow {
  
  
@@ -356,6 +389,7 @@
   font-weight: bold;
 }
 .side-nav-divider{
+  display:none;
   width: 1px;
   height:1em;
   background-color:white;
@@ -373,6 +407,13 @@
   font-weight: 888;
   text-align: center;
   
+}
+.card-image{
+  width:100%;
+  height:50%;
+  background: url(assets/portrait.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .inner-card{
   border-radius:8px;
@@ -537,4 +578,28 @@ div .dot {
 }
 .clickable{
   cursor: pointer;
+}
+@media (max-width: 850px) {
+  .nav-bar-top {
+    display: none;
+  }
+
+  #About{
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .portrait-holder{
+    width:50vw;
+  height: 50vw;
+  }
+  .card-container{
+    flex-direction: column;
+    align-content: center;
+  }
+  .card{
+    width:100%;
+    height:100%;
+
+  }
+  
 }

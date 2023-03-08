@@ -55,19 +55,19 @@ const Navbar = () => {
     return(
         <div className = 'nav-bar-top'>
             <div onClick = {() => scrollTo('0')} className= {`clickable nav-section ${sections[0].show ? 'show' : 'hide'}`} key = {sections[0].id}>
-            1 - Intro
+            Intro
                 </div>
                 <div className = {`top-nav-divider ${sections[1].show ? 'show' : 'hide'}`}></div>
                 <div   onClick = {() => scrollTo('1')} className= {`clickable nav-section ${sections[2].show ? 'show' : 'hide'}`} key = {sections[1].id}>
-            2 - About
+            About
                 </div>
                 <div className = {`top-nav-divider ${sections[3].show ? 'show' : 'hide'}`}></div>
                 <div  onClick = {() => scrollTo('2')} className= {`clickable nav-section ${sections[4].show ? 'show' : 'hide'}`} key = {sections[2].id}>
-                    3 - Projects
+                    Projects
                 </div>
                 <div className = {`top-nav-divider ${sections[5].show ? 'show' : 'hide'}`}></div>
                 <div  onClick = {() => scrollTo('3')} className= {`clickable nav-section ${sections[6].show ? 'show' : 'hide'}`} key = {sections[3].id}>
-                    4 - Contact
+                    Contact
                 </div>
              
                 
