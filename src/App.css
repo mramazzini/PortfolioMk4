@@ -80,14 +80,41 @@
   align-items: center;
   justify-content: space-evenly;
 }
+.projects-carousel{
+  z-index: 9;
+  width:100%;
+  height:100%;
+ 
+}
+.carousel-slide{
+}
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 350px;
+  z-index: 10;
+}
+
+.each-slide-effect span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+  z-index:10;
+}
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  width:100%;
-  height:100%;
+  
+  justify-content: space-evenly;
+  width:80%;
+  height:80%;
   align-content: center;
+  align-items:center;
 }
+
 
 .project-title{
   font-size: 5rem;
@@ -98,22 +125,35 @@
   z-index: 5;
   
 }
-
+.ant-carousel{
+  z-index: 10;
+}
+.card:hover{
+  width:28%;
+  height:83%;
+  transition: all 1s ease-in-out;
+  background-color: #1ecbe1;
+  color:#1ecbe1;
+}
 .card {
   display:flex;
+  text-decoration: none;
+  
+  color:#031923;
   justify-content: center;
   align-items: center;
   opacity: 0;
-  width: 20%;
-  height: 60%;
+  width: 25%;
+  height: 80%;
   margin:20px;
-  background-color: #031923;
+  background-color: #020D11;
   border-radius: 8px;
   text-align: center;
-  line-height: 200px;
-  font-size: 24px;
+  line-height: 2rem;
+  font-size: 2rem;
   
-  transition: opacity 1s ease-in-out;
+  
+  transition: all 1s ease-in-out;
 }
 .side-nav .in-viewport{
   opacity: 1;
@@ -409,18 +449,45 @@
   
 }
 .card-image{
-  width:100%;
+  margin-top:5%;
+  margin-bottom:2%;
+  width:90%;
   height:50%;
-  background: url(assets/portrait.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  border-radius:8px;
+ 
+  
 }
+#image-1{
+  background: url(assets/image1.PNG) no-repeat center top;
+  background-size: cover
+}
+
+.projects-card-divider{
+  width:90%;
+  background-color:#024744;
+  height:3px;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+
+.projects-content{
+  
+  line-height: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+
 .inner-card{
   border-radius:8px;
+  display:flex;
+  justify-content: center;
+  align-content:center;
+  align-items:center;
+  flex-direction: column;
   
   width:95%;
   height:95%;
-  background-color:#024744;
+  background-color:#031923;
 }
 
 .intro{
@@ -595,6 +662,7 @@ div .dot {
   .card-container{
     flex-direction: column;
     align-content: center;
+    flex-wrap: nowrap;
   }
   .card{
     width:100%;
