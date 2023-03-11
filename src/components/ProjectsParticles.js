@@ -411,6 +411,16 @@ const ProjectsParticles = () => {
                             "width": 32,
                             "height": 32
                           },
+                          {
+                            "src": "https://img.icons8.com/fluency/48/null/handlebar-mustache.png",
+                            "width": 32,
+                            "height": 32
+                          },
+                          {
+                            "src": "https://img.icons8.com/color/48/null/graphql.png",
+                            "width": 32,
+                            "height": 32
+                          },
 
                       ],
                       "images": [
@@ -451,6 +461,16 @@ const ProjectsParticles = () => {
                           },
                           {
                             "src": "https://img.icons8.com/color/48/null/mongodb.png",
+                            "width": 32,
+                            "height": 32
+                          },
+                          {
+                            "src": "https://img.icons8.com/fluency/48/null/handlebar-mustache.png",
+                            "width": 32,
+                            "height": 32
+                          },
+                          {
+                            "src": "https://img.icons8.com/color/48/null/graphql.png",
                             "width": 32,
                             "height": 32
                           },

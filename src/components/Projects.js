@@ -43,7 +43,7 @@ useEffect(() => {
     });
   });
 
-  observer.observe(document.querySelector(".nav-bar-top"));
+  observer.observe(document.querySelector(".projects"));
 
   return () => {
     observer.disconnect();
@@ -52,24 +52,36 @@ useEffect(() => {
 
   return (
     <div className = 'projects'>
-      <div className = 'card-container'>
-      <Link target="_blank" to="https://github.com/mramazzini" className= {`card ${sections[0].show ? 'show' : 'hide'}`}  key = {sections[0].id}>
+      
+      <div className = {`card-container ${inViewport ? 'in-viewport' : ''}`}>
+      <Link target="_blank" to="https://github.com/hhealing123/Workout-Tracker" className= {`card ${sections[0].show ? 'show' : 'hide'}`}  key = {sections[0].id}>
+      
         <div className = 'inner-card'>
+        Peak Performance
           <div className = 'card-image' id = 'image-1'></div>
-          Peak Performance
+          
           <div className = 'projects-card-divider'></div>
-          <div className = 'projects-content'>A MERN stack application utilizing GraphQl, JWT, MongoDB, and React. </div>
+          <div className = 'projects-content'>A Workout MERN stack application utilizing GraphQL, JWT, MongoDB, and React. </div>
         </div>
       </Link>
-      <Link target="_blank" to="https://github.com/mramazzini" className= {`card ${sections[1].show ? 'show' : 'hide'}`} key = {sections[1].id}>
+      <Link target="_blank" to="https://github.com/hhealing123/ListenToMe" className= {`card ${sections[1].show ? 'show' : 'hide'}`} key = {sections[1].id}>
       <div className = 'inner-card'>
+      Listen To Me
       <div className = 'card-image' id = 'image-2'></div>
+      
+          <div className = 'projects-card-divider'></div>
+          <div className = 'projects-content'>A Musical Blog making use of SQL, Sequelize, Handlebars, and ExpressJS.  </div>
       </div>
 
       </Link>
-      <Link target="_blank" to="https://github.com/mramazzini" className= {`card ${sections[2].show ? 'show' : 'hide'}`} key = {sections[2].id}>
+      <Link target="_blank" to="https://github.com/mramazzini/WalkerGame" className= {`card ${sections[2].show ? 'show' : 'hide'}`} key = {sections[2].id}>
       <div className = 'inner-card'>
+      Frederick the Penguin
       <div className = 'card-image' id = 'image-3'></div>
+      
+          <div className = 'projects-card-divider'></div>
+          <div className = 'projects-content'>2D platformer featuring a pixelated penguin. Built with Java. </div>
+      
       </div>
 
       </Link>

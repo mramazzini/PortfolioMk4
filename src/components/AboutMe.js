@@ -36,12 +36,13 @@ function AboutMe() {
           Matteo Ramazzini
         </header>
         <div className='divider'></div>
-        <section className='about-main'>My interest in software development began in high school
-          when I would make little games in Java. Snake, Space invaders, and Pong.
-          <br /><br />
-          Fast forward to today - I focus on learning new practical skills every day, alongside my pursual of my Computer Science degree.
-          <br /><br />
-          I am dedicated to providing the best user experience in whatever project I dive into. 
+        <section className='about-main'>
+          Full Stack Developer based in Houston Texas, US, dedicated to creating aesthetic, intuitive, and highly functional user interfaces.
+         
+        </section>
+        <section className='about-main-bottom'>
+          Check out some stuff I made below!
+         
         </section>
       </div>
     </div>

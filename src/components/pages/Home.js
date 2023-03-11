@@ -8,7 +8,7 @@ import Navbar from '../NavBar';
 import Projects from '../Projects';
 import SideNav1 from '../SideNav1';
 import ProjectsParticles from '../ProjectsParticles';
-
+import ContactMe from '../ContactMe';
 function Home() {
 
   useEffect(() => {
@@ -36,6 +36,7 @@ function Home() {
           </div>
         <Projects/>
         <div className = 'page-divider' id = 'divider3'></div>
+        <ContactMe/>
       </body>
        <main className='secondary-background'></main>
        </div>
