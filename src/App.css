@@ -467,7 +467,6 @@
   transition: opacity 1s ease-in-out;
 }
 .intro-text {
-  font-family: papyrus;
   letter-spacing: 1px;
   word-spacing: 2px;
   color: #fff;
