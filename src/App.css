@@ -739,4 +739,7 @@ div .dot {
   .contact-me {
     font-size: 10vh;
   }
+  .nav-bar-top {
+    display: none;
+  }
 }
