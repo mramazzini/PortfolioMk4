@@ -1,6 +1,6 @@
-# Portfolio Mk 4(WIP)
+# Portfolio Mk 4
 
-This is the 4th iteration of my portfolio site, showcasing my work in web development. 
+### This is the 4th iteration of my portfolio site, showcasing my work in web development. 
 
 ## Deployed Link: [matteoramazzini.com](https://matteoramazzini.com)
 
@@ -27,7 +27,7 @@ This site was built using the following technologies:
 
 The following are the key features of my portfolio site:
 
-- Responsive design that adapts to different screen sizes (WIP)
+- Responsive design that adapts to different screen sizes 
 - Navigation bar that allows easy access to different sections of the site
 - Navigation bar that links the user to various methods of contacting me.
 - Section showcasing my skills and areas of expertise
