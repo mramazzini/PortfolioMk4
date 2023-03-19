@@ -2,7 +2,7 @@
 
 This is the 4th iteration of my portfolio site, showcasing my work in web development. 
 
-## Deployed Link: [matteoramazzini.com](matteoramazzini.com)
+## Deployed Link: [matteoramazzini.com](https://matteoramazzini.com)
 
 ## Table of Contents
 
