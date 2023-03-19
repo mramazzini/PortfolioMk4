@@ -29,6 +29,10 @@
 
   transition-delay: 1s;
 }
+.inner-card {
+  color: #fff;
+  font-size: 2vw;
+}
 .nav-section {
   color: #fff;
   text-decoration: none;
@@ -434,6 +438,8 @@
 .contact-body {
   font-size: 2vw;
   color: #fff;
+  width: 75%;
+  text-align: center;
 }
 .madness {
   font-family: sans-serif;
@@ -680,7 +686,12 @@ div .dot {
   }
   .nav-bar-top {
   }
-
+  .intro-text {
+    font-size: 10vw;
+  }
+  .main-background {
+    overflow-x: hidden;
+  }
   #About {
     flex-direction: column;
     justify-content: space-evenly;
@@ -688,6 +699,10 @@ div .dot {
   .portrait-holder {
     width: 50vw;
     height: 50vw;
+  }
+
+  .bobbing-arrow {
+    display: none;
   }
   .card-container {
     flex-direction: column;
@@ -714,5 +729,14 @@ div .dot {
   }
   .side-nav-icon {
     font-size: 2vh;
+  }
+  .contact-header {
+    font-size: 10vw;
+  }
+  .contact-body {
+    font-size: 2vh;
+  }
+  .contact-me {
+    font-size: 10vh;
   }
 }
